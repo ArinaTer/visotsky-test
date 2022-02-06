@@ -1,0 +1,156 @@
+//Form-page
+
+.form__page
+    display: flex
+    max-width: 900px
+    margin: 40px auto
+    background-color: $w
+    border-radius: 20px
+    +r(900)
+        max-width: 700px
+        margin: 30px auto
+    +r(735)
+        max-width: 600px
+    +r(660)
+        flex-direction: column
+        max-width: 80%
+
+        
+
+.form__img
+    position: relative
+    width: 100%
+    max-width: 40%
+    flex-basis: 40%
+    background: url(../img/fon.png) center right no-repeat
+    background-size: cover
+    border-bottom-left-radius: 20px
+    border-top-left-radius: 20px
+    z-index: 0
+    +r(660)
+        display: none
+
+    img
+        z-index: 2
+        max-width: 150%
+        height: auto
+        position: absolute
+        top: 55%
+        left: 50%
+        transform: translate(-50%, -50%)
+        +r(900)
+            max-width: 110%
+        +r(735)
+            max-width: 120%
+
+.form__page__content
+    padding: 30px 0 65px
+    max-width: 60%
+    flex-basis: 60%
+    +r(900)
+        padding: 25px 0 55px 
+    +r(660)
+        max-width: 100%
+        flex-basis: 100%
+
+
+.form__title
+    display: grid
+    justify-content: center
+    padding-bottom: 50px
+    +r(900)
+        padding-bottom: 40px
+    +r(735)
+        padding-bottom: 20px
+
+    .title
+        font-size: 24px
+        line-height: 23px
+        text-transform: uppercase
+        +black
+        +r(735)
+            font-size: 20px
+        +r(660)
+            font-size: 18px
+
+.form__subtitle
+    display: grid
+    flex-direction: column
+    justify-content: center
+    text-align: center
+
+    .pb
+        padding: 15px 0 35px
+        +r(735)
+            padding: 10px 0 25px
+        +r(660)
+            padding: 7px 0 15px
+
+    .subtitle--reg
+        font-size: 14px
+        line-height: 13px
+        +r(735)
+            font-size: 12px
+        +r(660)
+            font-size: 10px
+        span
+            +bold
+
+    .subtitle--bold
+        padding: 5px 0 7px
+        font-size: 20px
+        line-height: 22px
+        text-transform: uppercase
+        +black
+        +r(735)
+            font-size: 16px
+        +r(660)
+            font-size: 14px
+
+.form__group
+    display: flex
+    flex-direction: column
+
+    .label
+        font-size: 12px
+        line-height: 11px
+        +r(735)
+            font-size: 10px
+        +r(660)
+            font-size: 9px
+    .input
+        margin: 5px 0 15px
+        padding: 20px 15px
+        border: 2px solid $yellow
+        border-radius: 4px
+        +r(735)
+            padding: 15px 10px
+        +r(660)
+            padding: 10px 7px
+
+        &::placeholder
+            font-size: 14px
+            line-height: 13px
+            color: $b
+            +bold
+            +r(735)
+                font-size: 12px
+            +r(660)
+                font-size: 10px
+
+    .form-btn
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 16px
+        line-height: 110%
+        color: $w
+        text-transform: uppercase
+        +black
+        padding: 15px 0
+        background: linear-gradient(92.64deg, #FF5621 29.24%, #F21313 83.67%)
+        border-radius: 4px
+        +r(735)
+            font-size: 12px
+        +r(660)
+            font-size: 10px
